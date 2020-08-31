@@ -8,7 +8,10 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "start": "nuxt start",
+    "start": "nuxt start",    
+    "create:blog": "node node/buildBlog.js",
+    "create:links": "node node/buildLinks.js",
+    "create:all": "npm run create:blog && npm run create:links",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
@@ -30,7 +33,8 @@
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^10.0.1",
-    "vue-jest": "^3.0.6"
+    "vue-jest": "^3.0.6",
+    "vuex": "^3.5.1"
   },
   "keywords": [],
   "author": "Allen Royston",

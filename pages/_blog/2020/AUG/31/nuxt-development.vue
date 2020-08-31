@@ -1,7 +1,8 @@
 <template lang='pug'>
   .container
-    h1 Home page
-    SiteLinks
+    h1 Nuxt Development
+    NuxtLink(to="/")
+      | Back    
 </template>
 
 <script>

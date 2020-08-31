@@ -1,0 +1,28 @@
+{
+    "entries": [
+        {
+            "year": "2020",
+            "month": "AUG",
+            "day": "25",
+            "title": "actual-title",
+            "url": "blog/2020/AUG/25/actual-title"
+        },
+        {
+            "year": "2020",
+            "month": "AUG",
+            "day": "25",
+            "title": "another-title",
+            "url": "blog/2020/AUG/25/another-title"
+        },
+        {
+            "year": "2020",
+            "month": "AUG",
+            "day": "31",
+            "title": "nuxt-development",
+            "url": "blog/2020/AUG/31/nuxt-development"
+        }
+    ],
+    "metadata": {
+        "updatedOn": "2020-08-31T13:40:09.030Z"
+    }
+}
