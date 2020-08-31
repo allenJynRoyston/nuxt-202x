@@ -1,5 +1,14 @@
 <template lang='pug'>
-  div
-    h1 Index page
-    NuxtLink(to="/about") About
+  .container
+    h1 Home page
+    NuxtLink(to="/about")
+      | About page      
+    NuxtLink(to="/contact")
+      | Contact page            
 </template>
+
+<script>
+export default {
+  transition: 'slide-left'
+}
+</script>

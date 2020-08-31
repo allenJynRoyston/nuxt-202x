@@ -14,6 +14,7 @@
     "nuxt": "^2.14.4"
   },
   "devDependencies": {
+    "axios": "^0.20.0",
     "install": "^0.13.0",
     "node-sass": "^4.14.1",
     "npm": "^6.14.8",
@@ -21,9 +22,7 @@
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^10.0.1"
   },
-  "keywords": [
-
-  ],
+  "keywords": [],
   "author": "Allen Royston",
   "license": "MIT"
 }

@@ -1,6 +1,6 @@
 <template lang='pug'>
   .container
-    h1 About page
+    h1 Blog page
     NuxtLink(to="/")
       | Back    
 </template>

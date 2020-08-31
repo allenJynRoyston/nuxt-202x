@@ -1,3 +1,12 @@
 <template lang='pug'>
-  h1 contact
+  .container
+    h1 Contact page
+    NuxtLink(to="/")
+      | Back    
 </template>
+
+<script>
+export default {
+  transition: 'slide-left'
+}
+</script>
