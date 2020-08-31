@@ -14,6 +14,6 @@ export default {
     '@/assets/css/transitions.scss',
     '@/assets/css/blog.scss'
   ],
-  loading: '@/components/Loading.vue',
+  loading: '@/components/LoadingBar.vue',
   components: true
 }
