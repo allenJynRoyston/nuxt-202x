@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "start": "nuxt start",    
-    "git:commit": "npm run create:all && git commit -am \"auto commit\" && git push origin master",
+    "git:commit": "npm run create:all && git add . && git commit -m \"auto commit\" && git push origin master",
     "create:blog": "node node/buildBlog.js",
     "create:links": "node node/buildLinks.js",
     "create:all": "npm run create:blog && npm run create:links",
