@@ -6,7 +6,7 @@
 
 <style lang='scss'>
   .footer{
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
     background-color: black;
     color: white;
