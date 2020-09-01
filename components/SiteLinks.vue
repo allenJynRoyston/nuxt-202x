@@ -1,6 +1,6 @@
 <template lang='pug'>
   .sitelinks-container
-    NuxtLink(v-for="(data, index) in jsonData.links" :key='index' :to='data.link').link
+    NuxtLink(v-for="(data, index) in jsonData.links" :key='index' :to='data.link' v-bind:class="[checkActive(data.link)]" ).link
       | {{data.name}}    
 </template>
 
@@ -12,6 +12,11 @@ export default {
       jsonData
     }
   },
+  methods:{
+    checkActive(route){            
+      return route === location.pathname ? 'active' : 'inactive'      
+    }
+  },
   transition: 'slide-left'
 }
 </script>
@@ -20,5 +25,9 @@ export default {
   .link{
     font-size: 16px;
     margin: 0 5px;
+  }
+
+  .active{
+    color: red
   }
 </style>
