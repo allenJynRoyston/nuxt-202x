@@ -1,5 +1,5 @@
 <template lang='pug'>
-  .container.blog-layout
+  .page-container.blog-layout
     h1.title {{title}}
     h5.subtitle {{subtitle}}
     p.author By {{author}}
@@ -18,6 +18,9 @@ const title = `Blog Entry 2`,
 
 
 export default {
+  transition(to, from) {            
+    return 'slide-left'
+  },
   data: function () {
     return {
       title,
@@ -57,8 +60,7 @@ Nisi lacus sed viverra tellus. Justo nec ultrices dui sapien eget mi proin sed l
         `})
       }, 1000)
     })
-  },
-  transition: 'slide-left'
+  }
 }
 </script>
 

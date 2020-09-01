@@ -1,5 +1,5 @@
 <template lang='pug'>
-  div
+  .page-container
     Header
       h1 Blog
     BodyContent
@@ -20,7 +20,9 @@ export default {
       jsonData
     }
   },
-  transition: 'slide-left'
+  transition(to, from) {            
+    return 'slide-left'
+  },
 }
 </script>
 

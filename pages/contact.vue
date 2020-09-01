@@ -1,5 +1,5 @@
 <template lang='pug'>
-  div
+  .page-container
     Header
       h1 Contact
     BodyContent
@@ -10,7 +10,9 @@
 
 <script>
 export default {
-  transition: 'slide-left'
+  transition(to, from) {            
+    return 'slide-left'
+  },
 }
 </script>
 

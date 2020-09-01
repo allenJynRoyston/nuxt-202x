@@ -1,5 +1,5 @@
 <template lang='pug'>
-  div
+  .page-container
     Header
       h1 Todo (Vuex Example)
     BodyContent
@@ -16,6 +16,9 @@
 
 <script>
 export default {
+  transition(to, from) {            
+    return 'slide-left'
+  },
   computed: {
     todos () {
       return this.$store.state.todos.list

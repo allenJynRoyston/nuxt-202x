@@ -1,5 +1,5 @@
 <template lang='pug'>
-  div
+  .page-container
     Header
       h1 Home
     BodyContent(style='text-align: center')
@@ -11,6 +11,8 @@
 
 <script>
   export default {
-    transition: 'slide-left'
+    transition(to, from) {            
+      return 'slide-left'
+    },
   }
 </script>

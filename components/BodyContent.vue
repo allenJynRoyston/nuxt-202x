@@ -10,5 +10,6 @@
     max-width: 600px;
     min-height: 100vh;
     margin: auto;  
+    transition: all .5s cubic-bezier(.55, 0, .1, 1);
   }
 </style>
