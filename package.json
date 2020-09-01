@@ -1,4 +1,5 @@
 {
+  "name": "nuxt_boilerplate_202x",
   "version": "1.0.0",
   "main": "web.js",
   "scripts": {
