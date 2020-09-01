@@ -1,13 +1,14 @@
 <template lang='pug'>
-  .page-container.blog-layout
-    h1.title {{title}}
-    h5.subtitle {{subtitle}}
-    p.author By {{author}}
-    RouteBack
-    hr
-
-    .content(v-if='!!content')
-      div(v-html="$md.render(content)")      
+  div.use-transition
+    .page-container.blog-layout
+      h1.title {{title}}
+      h5.subtitle {{subtitle}}
+      p.author By {{author}}
+      RouteBack
+      hr
+      .content(v-if='!!content')
+        div(v-html="$md.render(content)")  
+    Footer    
 </template>
 
 <script>

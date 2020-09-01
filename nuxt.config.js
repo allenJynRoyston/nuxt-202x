@@ -55,6 +55,7 @@ export default {
   css: [
     '@/assets/css/_reset.css',
     '@/assets/css/_skeleton.css',
+    '@/assets/css/sass_mq.scss',
     '@/assets/css/global.scss',
     '@/assets/css/transitions.scss',
     '@/assets/css/blog.scss'

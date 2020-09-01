@@ -1,13 +1,14 @@
 <template lang='pug'>
-  .page-container
-    Header
-      h1 Blog
-    BodyContent
-      hr
-      .entry-list
-      .item(v-for="(data, index) in jsonData.entries" :key='index')
-        NuxtLink(:to='data.url')
-          | {{data.title}}   
+  div.use-transition
+    .page-container
+      Header
+        h1 Blog
+      BodyContent
+        hr
+        .entry-list
+        .item(v-for="(data, index) in jsonData.entries" :key='index')
+          NuxtLink(:to='data.url')
+            | {{data.title}}   
     Footer
 </template>
 

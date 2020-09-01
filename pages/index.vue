@@ -1,11 +1,12 @@
 <template lang='pug'>
-  .page-container
-    Header
-      h1 Home
-    BodyContent(style='text-align: center')
-      hr
-      p Built with Nuxt/Vue
-      img(src="~/assets/images/nuxt-icon-white.png")    
+  div.use-transition
+    .page-container
+      Header
+        h1 Home
+      BodyContent(style='text-align: center')
+        hr
+        p Built with Nuxt/Vue
+        img(src="~/assets/images/nuxt-icon-white.png" style='width: 100%; height: auto')    
     Footer
 </template>
 
