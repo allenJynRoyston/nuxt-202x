@@ -14,7 +14,7 @@ export default {
   },
   methods:{
     checkActive(route){            
-      return route === location.pathname ? 'active' : 'inactive'      
+      return process.client ? route === location.pathname ? 'active' : 'inactive' : 'active'
     }
   },
   transition: 'slide-left'
