@@ -9,10 +9,10 @@ export const mutations = {
       done: false
     })
   },
-  remove(state, { todo }) {
-    state.list.splice(state.list.indexOf(todo), 1)
+  remove(state, index) {    
+    state.list.splice(index, 1)
   },
-  toggle(todo) {
-    todo.done = !todo.done
+  toggle(state, index) {
+    state.list[index].done = !state.list[index].done    
   }
 }

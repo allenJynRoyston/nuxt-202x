@@ -2,7 +2,8 @@
   .container
     h1 Contact page
     NuxtLink(to="/")
-      | Back    
+      | Back   
+    hr 
 </template>
 
 <script>

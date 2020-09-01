@@ -3,6 +3,7 @@
     h1 About page
     NuxtLink(to="/")
       | Back    
+    hr
 </template>
 
 <script>

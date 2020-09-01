@@ -2,6 +2,8 @@
   .container
     h1 Home page
     SiteLinks
+    hr
+    
 </template>
 
 <script>

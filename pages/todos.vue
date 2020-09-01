@@ -1,16 +1,19 @@
-<template>
-  <ul>
-    <li v-for="todo in todos" :key="todo.text">
-      <input :checked="todo.done" @change="toggle(todo)" type="checkbox">
-      <span :class="{ done: todo.done }">{{ todo.text }}</span>
-    </li>
-    <li><input @keyup.enter="addTodo" placeholder="What needs to be done?"></li>
-  </ul>
+<template lang='pug'>
+  .container
+    h1 Todo (Vuex Example)
+    NuxtLink(to="/")
+      | Back       
+    hr
+    .list-container
+      ul
+        li(v-for="(todo, index) in todos")
+          input(:checked="todo.done" type="checkbox" v-on:click='toggle(index)')
+          span.todoitem(:class="{ done: todo.done }" v-on:click='toggle(index)') {{ todo.text }} 
+          span(v-if='todo.done'  v-on:click='remove(index)') 🗑️
+      input(@keyup.enter="addTodo" placeholder="What needs to be done?")  
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
-
 export default {
   computed: {
     todos () {
@@ -22,15 +25,35 @@ export default {
       this.$store.commit('todos/add', e.target.value)
       e.target.value = ''
     },
-    ...mapMutations({
-      toggle: 'todos/toggle'
-    })
+    toggle(index){
+      this.$store.commit('todos/toggle', index)
+    }, 
+    remove(index){
+      console.log('remove')
+      this.$store.commit('todos/remove', index)
+    }        
   }
 }
 </script>
 
-<style>
-.done {
-  text-decoration: line-through;
-}
+<style lang='scss'>
+  .list-container{
+    display: flex;
+    flex-direction: column;
+
+    .todoitem{
+      margin-left: 5px;
+    }
+
+    .done {
+      text-decoration: line-through;
+    }    
+
+    li{
+      cursor: pointer;
+      list-style-type:none;
+    }  
+  }
+
+
 </style>

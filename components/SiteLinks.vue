@@ -18,7 +18,7 @@ export default {
 
 <style lang='scss' scoped>
   .link{
-    font-size: 12px;
+    font-size: 16px;
     margin: 0 5px;
   }
 </style>

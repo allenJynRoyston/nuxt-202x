@@ -1,8 +1,13 @@
 <template lang='pug'>
   .container
     h1 Blog page
-    NuxtLink(v-for="(data, index) in jsonData.entries" :key='index' :to='data.url')
-      | {{data.title}}    
+    RouteBack
+
+    hr
+    .entry-list
+      .item(v-for="(data, index) in jsonData.entries" :key='index')
+        NuxtLink(:to='data.url')
+          | {{data.title}}    
 </template>
 
 <script>
@@ -17,3 +22,20 @@ export default {
   transition: 'slide-left'
 }
 </script>
+
+<style lang='scss'>
+  .entry-list{
+    display: flex;
+    flex-direction: column;
+
+    .item:not(:last-child){
+      border-bottom: 1px dotted lightgrey;
+      padding: 5px 0;
+    }
+
+    a{
+      text-transform: uppercase;
+      font-size: 16px;      
+    }
+  }
+</style>
