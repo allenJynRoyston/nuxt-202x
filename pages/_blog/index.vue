@@ -1,13 +1,14 @@
 <template lang='pug'>
-  .container
-    h1 Blog page
-    RouteBack
-
-    hr
-    .entry-list
+  div
+    Header
+      h1 Blog
+    BodyContent
+      hr
+      .entry-list
       .item(v-for="(data, index) in jsonData.entries" :key='index')
         NuxtLink(:to='data.url')
-          | {{data.title}}    
+          | {{data.title}}   
+    Footer
 </template>
 
 <script>

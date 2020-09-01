@@ -1,16 +1,17 @@
 <template lang='pug'>
-  .container
-    h1 Todo (Vuex Example)
-    NuxtLink(to="/")
-      | Back       
-    hr
-    .list-container
-      ul
-        li(v-for="(todo, index) in todos")
-          input(:checked="todo.done" type="checkbox" v-on:click='toggle(index)')
-          span.todoitem(:class="{ done: todo.done }" v-on:click='toggle(index)') {{ todo.text }} 
-          span(v-if='todo.done'  v-on:click='remove(index)') 🗑️
-      input(@keyup.enter="addTodo" placeholder="What needs to be done?")  
+  div
+    Header
+      h1 Todo (Vuex Example)
+    BodyContent
+      hr
+      .list-container
+        ul
+          li(v-for="(todo, index) in todos")
+            input(:checked="todo.done" type="checkbox" v-on:click='toggle(index)')
+            span.todoitem(:class="{ done: todo.done }" v-on:click='toggle(index)') {{ todo.text }} 
+            span(v-if='todo.done'  v-on:click='remove(index)') 🗑️
+        input(@keyup.enter="addTodo" placeholder="What needs to be done?")  
+    Footer
 </template>
 
 <script>

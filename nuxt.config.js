@@ -1,8 +1,12 @@
 export default {
   modules: [
+    '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
-    'nuxt-compress'
+    'nuxt-compress',    
   ],   
+  markdownit: {
+    injected: true
+  },   
   "nuxt-compress": {
     gzip: {
       cache: true
@@ -11,11 +15,15 @@ export default {
       threshold: 10240
     }
   },  
+
+  
+  //-----------------------------
+
   pwa: {
     manifest: {
-      name: 'Jyn Labs',
-      short_name: 'Jyn Labs',
-      description: "Code, life and sex.",
+      name: 'Nuxt Boilerplate',
+      short_name: 'Nuxt Boilerplate',
+      description: "A Nuxt Boilerplate.",
       lang: 'en',
       theme_color: "#fff",
       orientation: "portrait-primary",
@@ -25,6 +33,9 @@ export default {
       source: 'static/webmanifest/icon.png'
     }
   },  
+
+  //-----------------------------
+
   head: {
     link: [
       {
@@ -38,6 +49,9 @@ export default {
       }
     ]  
   },
+
+  //-----------------------------
+
   css: [
     '@/assets/css/_reset.css',
     '@/assets/css/_skeleton.css',
@@ -45,6 +59,9 @@ export default {
     '@/assets/css/transitions.scss',
     '@/assets/css/blog.scss'
   ],
+
+  //-----------------------------
+
   // loading: '@/components/LoadingBar.vue',
   components: true
 }

@@ -1,13 +1,16 @@
 <template lang='pug'>
-  .container
-    h1 Home page
-    SiteLinks
-    hr
-    
+  div
+    Header
+      h1 Home
+    BodyContent(style='text-align: center')
+      hr
+      p Built with Nuxt/Vue
+      img(src="~/assets/images/nuxt-icon-white.png")    
+    Footer
 </template>
 
 <script>
-export default {
-  transition: 'slide-left'
-}
+  export default {
+    transition: 'slide-left'
+  }
 </script>

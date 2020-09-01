@@ -20,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
+    "@nuxtjs/markdownit": "^1.2.10",
     "@nuxtjs/pwa": "^3.0.2",
     "@vue/cli-plugin-unit-jest": "^4.5.4",
     "@vue/test-utils": "^1.0.5",

@@ -1,5 +1,8 @@
 export const state = () => ({
-  list: []
+  list: [
+    {text: "Learn Nuxt", done: true},
+    {text: "Build something", done: false}
+  ]
 })
 
 export const mutations = {
