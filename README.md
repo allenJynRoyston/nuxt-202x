@@ -1,6 +1,9 @@
 ## What am I?
 ⭐ A Nuxt boilerplate project for 2020.  Enhanced with built in support for PWA, GZip, unit testing and more.  
 
+## Preview
+[Click here to see a live version](https://nuxt-202x.herokuapp.com/)
+
 ## Core technologies
 - [Nuxt 2.x](https://nuxtjs.org/) 
 - [Vue 2.x](https://vuejs.org/) 
