@@ -1,14 +1,12 @@
 {
-  "name": "node-example",
   "version": "1.0.0",
-  "description": "This example is so cool.",
   "main": "web.js",
   "scripts": {
     "test": "jest",
     "dev": "nuxt",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "start": "nuxt start",    
+    "start": "nuxt start",
     "git:commit": "npm run create:all && git add . && git commit -m \"auto commit\" && git push origin master",
     "create:blog": "node node/buildBlog.js",
     "create:links": "node node/buildLinks.js",
@@ -16,11 +14,13 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "nuxt": "^2.14.4"
+    "nuxt": "^2.14.4",
+    "nuxt-compress": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
+    "@nuxtjs/pwa": "^3.0.2",
     "@vue/cli-plugin-unit-jest": "^4.5.4",
     "@vue/test-utils": "^1.0.5",
     "axios": "^0.20.0",
