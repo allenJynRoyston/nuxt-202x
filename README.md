@@ -1,5 +1,5 @@
 ## What am I?
-⭐ A Nuxt boilerplate project for 2020.  Enhanced with built in support for PWA, GZip, unit testing and more.  
+⭐ A Nuxt boilerplate project for 2020.  Enhanced with built in support for PWA, GZip, mobile-first (i.e. SASS MQ), unit testing and more.  
 
 ## Preview
 [Click here to see a live version](https://nuxt-202x.herokuapp.com/)
@@ -9,6 +9,7 @@
 - [Vue 2.x](https://vuejs.org/) 
 - [Vuex 3.x](https://github.com/vuejs/vuex)
 - [Jest](https://jestjs.io/)
+- [Sass MQ](https://github.com/sass-mq/sass-mq) 
 - ES6/7 support (via Babel) 
 
 ## Install instructions:
