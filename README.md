@@ -31,6 +31,12 @@ $ npm run create:all
 ```
 This will generate a JSON schema the Blog.vue component will utilize to automatically display your latest links.  It can be found in static/JSON.  If you wish to tweak the JSON structure, you can alter the code in node/buildBlog.js
 
+## Auto deployment
+If you have this repo in Github, you can run this command to automatically add and push for you.  It will also automatically update your link/blog pages.
+```sh
+$ npm run git
+```
+
 ## Unit testing
 Make sure Jest is installed globally before running unit tests.
 ``` sh
