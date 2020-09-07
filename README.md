@@ -4,6 +4,9 @@
 ## Preview
 [Click here to see a live version](https://nuxt-202x.herokuapp.com/)
 
+## Complete walkthrough on how to deploy to Heroku
+[Click here to see a tutorial on how to deploy to Heroku in 10 easy steps](https://jyn-labs-2020.herokuapp.com/blog/2020/SEP/7/how_to_deploy_a_nuxt_site_on_heroku_in_10_easy_steps)
+
 ## Core technologies
 - [Nuxt 2.x](https://nuxtjs.org/) 
 - [Vue 2.x](https://vuejs.org/) 
